@@ -67,19 +67,30 @@ Throughout this challenge, I aim to develop proficiency in:
 
 ---
 
+## ✅ DA30 – Day 03 Completed
+
+### Skills You Learned
+Reading CSV files with Pandas
+Exploring datasets (head(), tail(), info(), describe())
+Selecting columns
+Filtering rows with conditions
+Adding new columns
+Performing basic statistical analysis
+Finding maximum and minimum values
+Calculating averages and totals
+Working with real-world tabular data
+
 ## 📂 Repository Structure
 
 ```
 DA30/
-│
 ├── Day01/
-│
 ├── Day02/
-│   ├── Student Management System.ipynb
-│   ├── RW-CSV.ipynb
-│   ├── Numpy.ipynb
-│   └── students.csv
-│
+├── Day03/
+│   ├── Pandas_Basics.ipynb
+│   ├── Salary_Analysis.ipynb
+│   ├── employees.csv
+│   └── students_sorted.csv   (if you completed the bonus)
 └── README.md
 ```
 
