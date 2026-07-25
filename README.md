@@ -1,12 +1,12 @@
-# DA30
+# DA30 - 30 Day Data Analyst Transformation Challenge
 
-My 30-Day Data Analyst Journey.
+## Day 01
+- Started SWAYAM Data Analytics course
+- Revised Python basics
+- Built Student Grade Calculator
+- Uploaded project to GitHub
 
-## Goals
-
-- Learn Data Analytics
-- Build Projects
-- Improve Python
-- Learn SQL
-- Master Power BI
-- Become Job Ready
+Skills:
+- Python
+- Git
+- GitHub
