@@ -80,22 +80,6 @@ Finding maximum and minimum values
 Calculating averages and totals
 Working with real-world tabular data
 
-## 📂 Repository Structure
-
-```
-DA30/
-├── Day01/
-├── Day02/
-├── Day03/
-│   ├── Pandas_Basics.ipynb
-│   ├── Salary_Analysis.ipynb
-│   ├── employees.csv
-│   └── students_sorted.csv   (if you completed the bonus)
-└── README.md
-```
-
----
-
 ## 🎓 Learning Resources
 
 - SWAYAM – Data Analytics Course
@@ -104,7 +88,38 @@ DA30/
 - Git & GitHub
 
 ---
+# DA30 - Day 04
 
+## Topics Covered
+- Introduction to NumPy
+- Creating NumPy Arrays
+- Array Indexing and Slicing
+- Array Operations
+- Statistical Functions
+- Practice Programs
+
+## Skills Learned
+- np.array()
+- np.arange()
+- np.zeros()
+- np.ones()
+- np.mean()
+- np.max()
+- np.min()
+- np.sum()
+
+---
+DA30/
+│
+├── Day01/
+├── Day02/
+├── Day03/
+├── Day04/
+│   ├── day04_numpy_practice.ipynb
+│   ├── day04_numpy_practice.py
+│   └── README.md
+└── README.md
+---
 ## 🌟 About This Challenge
 
 The purpose of this challenge is to build practical Data Analytics skills through consistent daily practice and project-based learning.
