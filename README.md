@@ -1,4 +1,4 @@
-# 🚀 DA30 – 30-Day Data Analyst Transformation Challenge
+  # 🚀 DA30 – 30-Day Data Analyst Transformation Challenge
 
 Welcome to my **DA30 (30-Day Data Analyst Transformation Challenge)** repository.
 
@@ -109,15 +109,61 @@ Working with real-world tabular data
 - np.sum()
 
 ---
+DA30 – Day 05: NumPy Advanced Operations
+🎯 Objective
+
+Learn advanced NumPy operations for data analysis, including arithmetic operations, Boolean indexing, array reshaping, random number generation, and practical data manipulation.
+
+📚 Topics Covered
+NumPy array arithmetic
+Scalar operations
+Boolean masking and filtering
+Logical conditions (&, |)
+Random number generation
+Array reshaping using reshape()
+Statistical functions
+np.sum()
+np.mean()
+np.max()
+np.min()
+np.count_nonzero()
+📝 Practice Exercises
+Performed arithmetic operations on two NumPy arrays.
+Generated numbers from 1 to 20 and displayed only even numbers.
+Generated 15 random integers and calculated:
+Maximum value
+Minimum value
+Average value
+Reshaped a one-dimensional array into a matrix.
+Analysed student marks using Boolean indexing:
+Displayed marks above 60.
+Displayed failed students (marks below 35).
+Counted students scoring above 75.
+💼 Mini Challenge: Weekly Sales Analysis
+
+Created a NumPy program to analyse weekly sales data by:
+
+Calculating total weekly sales.
+Finding the average daily sales.
+Identifying the highest and lowest sales.
+Displaying sales values greater than 1500.
+🛠️ Skills Gained
+Performing element-wise operations on arrays.
+Filtering data using Boolean conditions.
+Using comparison and logical operators.
+Applying NumPy statistical functions.
+Working with random data.
+Reshaping arrays for analysis.
+Solving basic real-world data analysis problems.
+---
+
 DA30/
 │
 ├── Day01/
 ├── Day02/
 ├── Day03/
 ├── Day04/
-│   ├── day04_numpy_practice.ipynb
-│   ├── day04_numpy_practice.py
-│   └── README.md
+│── Day05/
 └── README.md
 ---
 ## 🌟 About This Challenge
