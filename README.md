@@ -156,7 +156,16 @@ Working with random data.
 Reshaping arrays for analysis.
 Solving basic real-world data analysis problems.
 ---
+**DA30 - Day 06 – Indexing, Slicing & Filtering using Array**
+Topic: NumPy Indexing, Slicing & Boolean Filtering
+Learning Objectives
 
+Access individual array elements
+Slice 1D and 2D arrays
+Use negative indexing
+Filter arrays using conditions
+Modify array values
+---
 DA30/
 │
 ├── Day01/
@@ -164,6 +173,7 @@ DA30/
 ├── Day03/
 ├── Day04/
 │── Day05/
+│── Day06/
 └── README.md
 ---
 ## 🌟 About This Challenge
