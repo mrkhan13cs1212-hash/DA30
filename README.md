@@ -190,6 +190,42 @@ Modify array values
 ## Outcome
 Able to filter, analyze, and modify NumPy arrays using conditions without loops.
 ---
+# DA30 - Day 08: NumPy Array Operations & Broadcasting
+
+## Topics Covered
+- Arithmetic Operations
+- Scalar Broadcasting
+- Element-wise Operations
+- Comparison Operations
+- Broadcasting
+- Real-world Numerical Calculations
+
+## Key Operators
+- +
+- -
+- *
+- /
+- >
+- <
+- ==
+- >=
+- <=
+
+## Skills Gained
+- Perform mathematical operations on arrays
+- Compare array elements
+- Apply scalar values using broadcasting
+- Build simple financial and analytical calculations
+
+## Real-world Applications
+- Sales Analysis
+- Profit Calculation
+- Temperature Monitoring
+- Price Calculations
+- Student Marks Analysis
+
+## Outcome
+Understand how NumPy performs fast vectorized operations and broadcasting without writing loops.
 ---
 DA30/
 │
@@ -199,6 +235,8 @@ DA30/
 ├── Day04/
 │── Day05/
 │── Day06/
+│── Day07/
+│── Day08/
 └── README.md
 ---
 ## 🌟 About This Challenge
