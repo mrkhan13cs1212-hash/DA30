@@ -166,6 +166,31 @@ Use negative indexing
 Filter arrays using conditions
 Modify array values
 ---
+# DA30 - Day 07: NumPy Boolean Masking & Filtering
+
+## Topics Covered
+- Boolean Masking
+- Conditional Filtering
+- Multiple Conditions
+- Updating Array Values
+- Data Analysis with NumPy
+
+## Key Functions
+- array[condition]
+- &
+- |
+- np.count_nonzero()
+
+## Real-World Applications
+- Student Result Analysis
+- Sales Filtering
+- Employee Salary Analysis
+- Temperature Monitoring
+
+## Outcome
+Able to filter, analyze, and modify NumPy arrays using conditions without loops.
+---
+---
 DA30/
 │
 ├── Day01/
