@@ -227,6 +227,7 @@ Able to filter, analyze, and modify NumPy arrays using conditions without loops.
 ## Outcome
 Understand how NumPy performs fast vectorized operations and broadcasting without writing loops.
 ---
+Day 09: NumPy Array Manipulation (Joining, Splitting & Reshaping)
 Topics Covered
 Array Concatenation
 Horizontal Stack
