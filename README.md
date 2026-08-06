@@ -227,6 +227,34 @@ Able to filter, analyze, and modify NumPy arrays using conditions without loops.
 ## Outcome
 Understand how NumPy performs fast vectorized operations and broadcasting without writing loops.
 ---
+Topics Covered
+Array Concatenation
+Horizontal Stack
+Vertical Stack
+Column Stack
+Split Arrays
+Reshape Arrays
+Flatten Arrays
+Functions Learned
+Function	Purpose
+np.concatenate()	Join arrays
+np.hstack()	Horizontal join
+np.vstack()	Vertical join
+np.column_stack()	Join as columns
+np.split()	Split arrays
+reshape()	Change dimensions
+flatten()	Convert to 1D
+🎯 Day 09 Challenge
+
+Without looking at your notes:
+
+Create a 1D array of numbers 1–20
+Reshape it into 4 × 5
+Display the 3rd row
+Display the 2nd column
+Flatten the array
+Split it into 4 equal arrays
+---
 DA30/
 │
 ├── Day01/
@@ -237,6 +265,7 @@ DA30/
 │── Day06/
 │── Day07/
 │── Day08/
+│── Day09/
 └── README.md
 ---
 ## 🌟 About This Challenge
