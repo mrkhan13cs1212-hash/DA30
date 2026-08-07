@@ -256,6 +256,34 @@ Display the 2nd column
 Flatten the array
 Split it into 4 equal arrays
 ---
+Day 10 - NumPy Random Module & Random Data Generation
+Topics Covered
+Random floats
+Random integers
+Random matrices
+Random choice
+Shuffle
+Random seed
+Normal distribution
+Functions Learned
+Function	Purpose
+np.random.rand()	Random floats (0 to 1)
+np.random.randint()	Random integers
+np.random.choice()	Random selection
+np.random.shuffle()	Shuffle array
+np.random.seed()	Reproducible randomness
+np.random.randn()	Normally distributed values
+💡 Interview Tips
+Difference between rand() and randn()
+rand()	randn()
+Uniform distribution	Normal (Gaussian) distribution
+Values between 0 and 1	Values centered around 0
+Never negative	Can be positive or negative
+Difference between choice() and shuffle()
+choice()	shuffle()
+Selects random elements	Rearranges the entire array
+Original array unchanged	Original array is modified
+---
 DA30/
 │
 ├── Day01/
@@ -267,6 +295,7 @@ DA30/
 │── Day07/
 │── Day08/
 │── Day09/
+│── Day10/
 └── README.md
 ---
 ## 🌟 About This Challenge
