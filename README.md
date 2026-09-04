@@ -1,315 +1,609 @@
-  # 🚀 DA30 – 30-Day Data Analyst Transformation Challenge
+# 🚀 DA30 – 30-Day Data Analyst Transformation Challenge
 
-Welcome to my **DA30 (30-Day Data Analyst Transformation Challenge)** repository.
+Welcome to my **DA30 – 30-Day Data Analyst Transformation Challenge** 🚀
 
-This repository documents my daily learning journey in **Data Analytics**, where I complete hands-on projects, coding exercises, and practical tasks every day to build industry-ready skills.
+This repository documents my **daily learning journey in Data Analytics**, focusing on practical skills, coding practice, data analysis, and real-world problem solving.
+
+The goal of this challenge is to build a strong foundation in **Python, Data Analysis, Visualization, SQL, Excel, Power BI, and Statistics** and gradually develop a portfolio suitable for a **Data Analyst career**.
 
 ---
 
 ## 🎯 Objectives
 
-Throughout this challenge, I aim to develop proficiency in:
+Through this 30-day challenge, I aim to strengthen my skills in:
 
-- Python
-- NumPy
-- Pandas
-- SQL
-- Microsoft Excel
-- Power BI
-- Statistics
-- Data Visualization
-- Git & GitHub
+* 🐍 Python
+* 🔢 NumPy
+* 🐼 Pandas
+* 🗄️ SQL
+* 📊 Microsoft Excel
+* 📈 Power BI
+* 📐 Statistics
+* 📉 Data Visualization
+* 🔧 Git & GitHub
+* 💼 Real-world Data Analysis
 
 ---
 
-# 📅 Progress
+# 📅 DA30 Progress Tracker
 
-## ✅ Day 01 – Python Basics & GitHub
+| Day    | Topic                                  | Status      |
+| ------ | -------------------------------------- | ----------- |
+| Day 01 | Python Basics & GitHub                 | ✅ Completed |
+| Day 02 | Python Data Structures, CSV & NumPy    | ✅ Completed |
+| Day 03 | Pandas Basics                          | ✅ Completed |
+| Day 04 | NumPy Basics                           | ✅ Completed |
+| Day 05 | NumPy Advanced Operations              | ✅ Completed |
+| Day 06 | NumPy Indexing, Slicing & Filtering    | ✅ Completed |
+| Day 07 | NumPy Boolean Masking & Filtering      | ✅ Completed |
+| Day 08 | NumPy Array Operations & Broadcasting  | ✅ Completed |
+| Day 09 | NumPy Array Manipulation               | ✅ Completed |
+| Day 10 | NumPy Random Module                    | ✅ Completed |
+| Day 11 | NumPy Aggregation & 2D Analysis        | ✅ Completed |
+| Day 12 | NumPy Reshape, Sorting & Ranking       | ✅ Completed |
+| Day 13 | NumPy Filtering & Conditional Analysis | 🔜 Next     |
+| Day 14 | Pandas Data Analysis                   | ⏳ Upcoming  |
+| Day 15 | Pandas Data Cleaning                   | ⏳ Upcoming  |
+| Day 16 | Pandas GroupBy & Aggregation           | ⏳ Upcoming  |
+| Day 17 | Data Visualization                     | ⏳ Upcoming  |
+| Day 18 | Matplotlib                             | ⏳ Upcoming  |
+| Day 19 | Seaborn                                | ⏳ Upcoming  |
+| Day 20 | SQL Basics                             | ⏳ Upcoming  |
+| Day 21 | SQL Filtering & Aggregation            | ⏳ Upcoming  |
+| Day 22 | SQL Joins                              | ⏳ Upcoming  |
+| Day 23 | Excel Data Analysis                    | ⏳ Upcoming  |
+| Day 24 | Power BI Basics                        | ⏳ Upcoming  |
+| Day 25 | Power BI Dashboard                     | ⏳ Upcoming  |
+| Day 26 | Statistics for Data Analysis           | ⏳ Upcoming  |
+| Day 27 | Data Cleaning Project                  | ⏳ Upcoming  |
+| Day 28 | Data Analysis Project                  | ⏳ Upcoming  |
+| Day 29 | Portfolio & GitHub                     | ⏳ Upcoming  |
+| Day 30 | Final Data Analyst Project             | ⏳ Upcoming  |
+
+---
+
+# 📘 Day 01 – Python Basics & GitHub
+
+### Topics Covered
+
+* Python Fundamentals
+* Variables and Data Types
+* Input and Output
+* Conditional Statements
+* Basic Programming Logic
+* Git & GitHub
 
 ### Tasks Completed
-- Started the SWAYAM Data Analytics course
-- Revised Python fundamentals
-- Built a Student Grade Calculator
-- Created a GitHub repository
-- Uploaded the project to GitHub
+
+* Started the **SWAYAM Data Analytics Course**
+* Revised Python fundamentals
+* Created a **Student Grade Calculator**
+* Created the DA30 GitHub repository
+* Uploaded Day 01 work to GitHub
 
 ### Skills Learned
-- Python Basics
-- Git
-- GitHub
+
+* Python Basics
+* Problem Solving
+* Git
+* GitHub
 
 ---
 
-## ✅ Day 02 – Python Data Structures, CSV & NumPy
+# 📘 Day 02 – Python Data Structures, CSV & NumPy
+
+### Topics Covered
+
+* Python Lists
+* Tuples
+* Dictionaries
+* Sets
+* CSV Files
+* Introduction to NumPy
 
 ### Tasks Completed
-- Practised Lists, Tuples, Dictionaries and Sets
-- Built a Student Management System
-- Read and processed CSV files
-- Performed basic data analysis using NumPy
-- Uploaded all Day 02 files to GitHub
+
+* Practiced Python data structures
+* Created a **Student Management System**
+* Worked with CSV data
+* Created basic NumPy arrays
+* Uploaded Day 02 work to GitHub
 
 ### Skills Learned
-- Python Data Structures
-- CSV File Handling
-- NumPy
-- Problem Solving
+
+* Python Data Structures
+* CSV Handling
+* NumPy Basics
+* GitHub Repository Management
 
 ---
 
-## 📊 Progress Tracker
+# 📘 Day 03 – Pandas Basics
 
-| Day | Topic | Status |
-|------|-------|--------|
-| Day 01 | Python Basics & GitHub | ✅ Completed |
-| Day 02 | Data Structures, CSV & NumPy | ✅ Completed |
-| Day 03 | Pandas Basics | ⏳ Coming Soon |
+### Topics Covered
 
----
+* Reading CSV files using Pandas
+* `head()`
+* `tail()`
+* `info()`
+* `describe()`
+* Selecting columns
+* Filtering data
+* Creating new columns
+* Basic statistics
 
-## ✅ DA30 – Day 03 Completed
+### Tasks Completed
 
-### Skills You Learned
-Reading CSV files with Pandas
-Exploring datasets (head(), tail(), info(), describe())
-Selecting columns
-Filtering rows with conditions
-Adding new columns
-Performing basic statistical analysis
-Finding maximum and minimum values
-Calculating averages and totals
-Working with real-world tabular data
+* Loaded tabular data using Pandas
+* Inspected datasets
+* Selected and filtered columns
+* Added calculated columns
+* Calculated maximum and minimum values
+* Calculated averages and totals
+* Worked with real-world tabular data
 
-## 🎓 Learning Resources
+### Skills Learned
 
-- SWAYAM – Data Analytics Course
-- Python Documentation
-- NumPy Documentation
-- Git & GitHub
-
----
-# DA30 - Day 04
-
-## Topics Covered
-- Introduction to NumPy
-- Creating NumPy Arrays
-- Array Indexing and Slicing
-- Array Operations
-- Statistical Functions
-- Practice Programs
-
-## Skills Learned
-- np.array()
-- np.arange()
-- np.zeros()
-- np.ones()
-- np.mean()
-- np.max()
-- np.min()
-- np.sum()
+* Pandas DataFrame
+* Data Inspection
+* Data Filtering
+* Basic Data Analysis
 
 ---
-DA30 – Day 05: NumPy Advanced Operations
-🎯 Objective
 
-Learn advanced NumPy operations for data analysis, including arithmetic operations, Boolean indexing, array reshaping, random number generation, and practical data manipulation.
+# 📘 Day 04 – NumPy Basics
 
-📚 Topics Covered
-NumPy array arithmetic
-Scalar operations
-Boolean masking and filtering
-Logical conditions (&, |)
-Random number generation
-Array reshaping using reshape()
-Statistical functions
-np.sum()
+### Topics Covered
+
+* Creating NumPy arrays
+* Array indexing
+* Array slicing
+* Array operations
+* Basic statistics
+
+### Important Functions
+
+```python
+np.array()
+np.arange()
+np.zeros()
+np.ones()
 np.mean()
 np.max()
 np.min()
+np.sum()
+```
+
+### Skills Learned
+
+* NumPy Arrays
+* Array Manipulation
+* Numerical Operations
+* Statistical Calculations
+
+---
+
+# 📘 Day 05 – NumPy Advanced Operations
+
+### Topics Covered
+
+* Array arithmetic
+* Scalar operations
+* Boolean masking
+* Conditional filtering
+* Logical conditions
+* Random number generation
+* Array reshaping
+* Statistical operations
+
+### Practice Tasks
+
+* Performed arithmetic operations on arrays
+* Extracted even numbers from 1–20
+* Generated random integers
+* Found maximum, minimum and average values
+* Reshaped arrays
+* Filtered student marks using Boolean indexing
+* Completed a weekly sales analysis challenge
+
+### Skills Learned
+
+* Boolean Masking
+* Array Filtering
+* Random Data Generation
+* Array Reshaping
+* Numerical Analysis
+
+---
+
+# 📘 Day 06 – NumPy Indexing, Slicing & Filtering
+
+### Topic
+
+**NumPy Indexing, Slicing & Boolean Filtering**
+
+### Learning Objectives
+
+* Access individual elements
+* Slice 1D arrays
+* Slice 2D arrays
+* Use negative indexing
+* Filter arrays using conditions
+* Modify array values
+
+### Skills Learned
+
+* NumPy Indexing
+* Array Slicing
+* Boolean Filtering
+* Array Modification
+
+---
+
+# 📘 Day 07 – NumPy Boolean Masking & Filtering
+
+### Topics Covered
+
+* Boolean Masking
+* Conditional Filtering
+* Multiple Conditions
+* Updating Array Values
+* Data Analysis with NumPy
+
+### Key Concepts
+
+```python
+array[condition]
+&
+|
 np.count_nonzero()
-📝 Practice Exercises
-Performed arithmetic operations on two NumPy arrays.
-Generated numbers from 1 to 20 and displayed only even numbers.
-Generated 15 random integers and calculated:
-Maximum value
-Minimum value
-Average value
-Reshaped a one-dimensional array into a matrix.
-Analysed student marks using Boolean indexing:
-Displayed marks above 60.
-Displayed failed students (marks below 35).
-Counted students scoring above 75.
-💼 Mini Challenge: Weekly Sales Analysis
+```
 
-Created a NumPy program to analyse weekly sales data by:
+### Real-World Applications
 
-Calculating total weekly sales.
-Finding the average daily sales.
-Identifying the highest and lowest sales.
-Displaying sales values greater than 1500.
-🛠️ Skills Gained
-Performing element-wise operations on arrays.
-Filtering data using Boolean conditions.
-Using comparison and logical operators.
-Applying NumPy statistical functions.
-Working with random data.
-Reshaping arrays for analysis.
-Solving basic real-world data analysis problems.
+* Student Result Analysis
+* Sales Filtering
+* Employee Salary Analysis
+* Temperature Monitoring
+
+### Outcome
+
+Learned how to **filter, analyze and modify NumPy arrays using conditions without loops**.
+
 ---
-**DA30 - Day 06 – Indexing, Slicing & Filtering using Array**
-Topic: NumPy Indexing, Slicing & Boolean Filtering
-Learning Objectives
 
-Access individual array elements
-Slice 1D and 2D arrays
-Use negative indexing
-Filter arrays using conditions
-Modify array values
+# 📘 Day 08 – NumPy Array Operations & Broadcasting
+
+### Topics Covered
+
+* Arithmetic Operations
+* Scalar Broadcasting
+* Element-wise Operations
+* Comparison Operations
+* Broadcasting
+* Numerical Calculations
+
+### Operators Practiced
+
+```text
++   -   *   /
+>   <   ==  >=  <=
+```
+
+### Skills Learned
+
+* Mathematical Operations
+* Element Comparison
+* Scalar Broadcasting
+* Vectorized Calculations
+
+### Real-World Applications
+
+* Sales Analysis
+* Profit Calculation
+* Temperature Monitoring
+* Price Calculations
+* Student Marks Analysis
+
+### Outcome
+
+Learned how NumPy performs **fast vectorized operations and broadcasting without using loops**.
+
 ---
-# DA30 - Day 07: NumPy Boolean Masking & Filtering
 
-## Topics Covered
-- Boolean Masking
-- Conditional Filtering
-- Multiple Conditions
-- Updating Array Values
-- Data Analysis with NumPy
+# 📘 Day 09 – NumPy Array Manipulation
 
-## Key Functions
-- array[condition]
-- &
-- |
-- np.count_nonzero()
+### Topic
 
-## Real-World Applications
-- Student Result Analysis
-- Sales Filtering
-- Employee Salary Analysis
-- Temperature Monitoring
+**Joining, Splitting & Reshaping Arrays**
 
-## Outcome
-Able to filter, analyze, and modify NumPy arrays using conditions without loops.
+### Topics Covered
+
+* Concatenation
+* Horizontal stacking
+* Vertical stacking
+* Column stacking
+* Array splitting
+* Reshaping
+* Flattening
+
+### Important Functions
+
+| Function            | Purpose                 |
+| ------------------- | ----------------------- |
+| `np.concatenate()`  | Join arrays             |
+| `np.hstack()`       | Horizontal join         |
+| `np.vstack()`       | Vertical join           |
+| `np.column_stack()` | Join arrays as columns  |
+| `np.split()`        | Split arrays            |
+| `reshape()`         | Change array dimensions |
+| `flatten()`         | Convert array to 1D     |
+
+### Day 09 Challenge
+
+* Created a 1D array from 1–20
+* Reshaped it into a `4 × 5` matrix
+* Displayed the 3rd row
+* Displayed the 2nd column
+* Flattened the array
+* Split the array into 4 equal arrays
+
 ---
-# DA30 - Day 08: NumPy Array Operations & Broadcasting
 
-## Topics Covered
-- Arithmetic Operations
-- Scalar Broadcasting
-- Element-wise Operations
-- Comparison Operations
-- Broadcasting
-- Real-world Numerical Calculations
+# 📘 Day 10 – NumPy Random Module & Random Data Generation
 
-## Key Operators
-- +
-- -
-- *
-- /
-- >
-- <
-- ==
-- >=
-- <=
+### Topics Covered
 
-## Skills Gained
-- Perform mathematical operations on arrays
-- Compare array elements
-- Apply scalar values using broadcasting
-- Build simple financial and analytical calculations
+* Random floating-point numbers
+* Random integers
+* Random matrices
+* Random selection
+* Array shuffling
+* Random seed
+* Normal distribution
 
-## Real-world Applications
-- Sales Analysis
-- Profit Calculation
-- Temperature Monitoring
-- Price Calculations
-- Student Marks Analysis
+### Important Functions
 
-## Outcome
-Understand how NumPy performs fast vectorized operations and broadcasting without writing loops.
+```python
+np.random.rand()
+np.random.randint()
+np.random.choice()
+np.random.shuffle()
+np.random.seed()
+np.random.randn()
+```
+
+### Interview Concepts
+
+#### `rand()` vs `randn()`
+
+| `rand()`                         | `randn()`                          |
+| -------------------------------- | ---------------------------------- |
+| Uniform distribution             | Normal/Gaussian distribution       |
+| Values generally between 0 and 1 | Values centered around 0           |
+| Values are non-negative          | Values can be positive or negative |
+
+#### `choice()` vs `shuffle()`
+
+| `choice()`                       | `shuffle()`                |
+| -------------------------------- | -------------------------- |
+| Selects random elements          | Rearranges an array        |
+| Original array remains unchanged | Original array is modified |
+
 ---
-Day 09: NumPy Array Manipulation (Joining, Splitting & Reshaping)
-Topics Covered
-Array Concatenation
-Horizontal Stack
-Vertical Stack
-Column Stack
-Split Arrays
-Reshape Arrays
-Flatten Arrays
-Functions Learned
-Function	Purpose
-np.concatenate()	Join arrays
-np.hstack()	Horizontal join
-np.vstack()	Vertical join
-np.column_stack()	Join as columns
-np.split()	Split arrays
-reshape()	Change dimensions
-flatten()	Convert to 1D
-🎯 Day 09 Challenge
 
-Without looking at your notes:
+# 📘 Day 11 – NumPy Aggregation & 2D Data Analysis
 
-Create a 1D array of numbers 1–20
-Reshape it into 4 × 5
-Display the 3rd row
-Display the 2nd column
-Flatten the array
-Split it into 4 equal arrays
+### Topics Covered
+
+* NumPy aggregation functions
+* Statistical calculations
+* 2D array indexing
+* Row and column analysis
+* Understanding `axis`
+* Using `axis=0`
+* Using `axis=1`
+* Finding positions using `np.unravel_index()`
+
+### Important Concepts
+
+Aggregation functions used:
+
+```python
+np.sum()
+np.mean()
+np.min()
+np.max()
+```
+
+### Understanding Axis
+
+```text
+axis=0 → Column-wise operation
+axis=1 → Row-wise operation
+```
+
+### 2D Array Analysis
+
+Practiced:
+
+* Accessing specific rows
+* Accessing specific columns
+* Finding maximum and minimum values
+* Calculating row-wise statistics
+* Calculating column-wise statistics
+* Finding the position of an element in a 2D array
+
+### Important Function
+
+```python
+np.unravel_index()
+```
+
+Used to convert a flattened index into the corresponding coordinates of a multidimensional array.
+
+### Skills Learned
+
+* NumPy Aggregation
+* Statistical Analysis
+* 2D Array Indexing
+* Axis-based Analysis
+* Multidimensional Data Analysis
+
 ---
-Day 10 - NumPy Random Module & Random Data Generation
-Topics Covered
-Random floats
-Random integers
-Random matrices
-Random choice
-Shuffle
-Random seed
-Normal distribution
-Functions Learned
-Function	Purpose
-np.random.rand()	Random floats (0 to 1)
-np.random.randint()	Random integers
-np.random.choice()	Random selection
-np.random.shuffle()	Shuffle array
-np.random.seed()	Reproducible randomness
-np.random.randn()	Normally distributed values
-💡 Interview Tips
-Difference between rand() and randn()
-rand()	randn()
-Uniform distribution	Normal (Gaussian) distribution
-Values between 0 and 1	Values centered around 0
-Never negative	Can be positive or negative
-Difference between choice() and shuffle()
-choice()	shuffle()
-Selects random elements	Rearranges the entire array
-Original array unchanged	Original array is modified
+
+# 📘 Day 12 – NumPy Reshape, Sorting & Ranking
+
+### Topics Covered
+
+* Array reshaping
+* Sorting arrays
+* Ranking values
+* Finding highest and lowest values
+* Top-N analysis
+* Least-N analysis
+* Statistical summary
+
+### Key Concepts
+
+Practiced:
+
+* Reshaping arrays into different dimensions
+* Sorting numerical data
+* Extracting highest values
+* Extracting lowest values
+* Identifying Top 3 values
+* Identifying Least 3 values
+* Calculating average values
+* Working with multidimensional array shapes
+
+### Analysis Results
+
+Using the Day 12 dataset:
+
+| Analysis       |               Result |
+| -------------- | -------------------: |
+| Highest Value  |               `2200` |
+| Lowest Value   |                `800` |
+| Average        |               `1500` |
+| Top 3 Values   | `[1900, 2100, 2200]` |
+| Least 3 Values |   `[800, 900, 1100]` |
+| Reshaped Array |             `(3, 4)` |
+
+### Skills Learned
+
+* NumPy Reshaping
+* Sorting
+* Ranking
+* Top-N Analysis
+* Statistical Summary
+* Data Organization
+
+### Outcome
+
+Day 12 strengthened the ability to **organize, sort, rank and summarize numerical data using NumPy**, which is an important foundation for further Data Analysis work.
+
 ---
+
+# 🔜 Day 13 – Next Step
+
+## NumPy Filtering & Conditional Analysis
+
+The next stage of the DA30 challenge will focus on:
+
+* Advanced conditional filtering
+* Multiple conditions
+* Boolean masks
+* Filtering real-world datasets
+* Conditional analysis
+* Data-driven decision making
+
+---
+
+# 📂 Repository Structure
+
+```text
 DA30/
 │
 ├── Day01/
 ├── Day02/
 ├── Day03/
 ├── Day04/
-│── Day05/
-│── Day06/
-│── Day07/
-│── Day08/
-│── Day09/
-│── Day10/
+├── Day05/
+├── Day06/
+├── Day07/
+├── Day08/
+├── Day09/
+├── Day10/
+├── Day11/
+├── Day12/
 └── README.md
----
-## 🌟 About This Challenge
-
-The purpose of this challenge is to build practical Data Analytics skills through consistent daily practice and project-based learning.
-
-Each day's work is uploaded to this repository to track my progress and showcase my learning journey.
+```
 
 ---
 
-## 📌 Connect With Me
+# 📊 About This Challenge
 
-GitHub: **https://github.com/mrkhan13cs1212-hash**
+The purpose of the **DA30 – 30-Day Data Analyst Transformation Challenge** is to develop practical Data Analytics skills through **consistent daily learning, coding practice and project-based work**.
+
+Each day focuses on a specific concept and the completed work is uploaded to the GitHub repository.
+
+The challenge is designed to gradually build skills in:
+
+```text
+Python
+   ↓
+NumPy
+   ↓
+Pandas
+   ↓
+Data Cleaning
+   ↓
+Data Visualization
+   ↓
+SQL
+   ↓
+Excel
+   ↓
+Power BI
+   ↓
+Statistics
+   ↓
+Real-World Data Analysis
+   ↓
+Portfolio Projects
+```
 
 ---
 
-⭐ Thank you for visiting my repository! Feel free to explore my projects and follow my learning journey.
+# 🎯 Final Goal
+
+By the end of 30 days, the objective is to have:
+
+* Stronger Python fundamentals
+* Practical NumPy and Pandas skills
+* SQL knowledge
+* Excel Data Analysis skills
+* Power BI dashboard experience
+* Data Visualization skills
+* Statistics fundamentals
+* Multiple practical projects
+* A structured GitHub portfolio
+* Better Data Analyst interview readiness
+
+---
+
+# 🔗 Connect
+
+**GitHub:**
+https://github.com/mrkhan13cs1212-hash
+
+---
+
+# ⭐ Thank You
+
+Thank you for visiting my repository!
+
+Feel free to explore my projects and follow my **Data Analyst learning journey**.
+
+**One Day → One Skill → One Step Closer to Becoming a Data Analyst 🚀**
