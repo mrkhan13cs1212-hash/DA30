@@ -42,8 +42,8 @@ Through this 30-day challenge, I aim to strengthen my skills in:
 | Day 11 | NumPy Aggregation & 2D Analysis        | ✅ Completed |
 | Day 12 | NumPy Reshape, Sorting & Ranking       | ✅ Completed |
 | Day 13 | NumPy Filtering & Conditional Analysis | ✅ Completed|
-| Day 14 | Pandas Data Analysis                   | 🔜 Next     |
-| Day 15 | Pandas Data Cleaning                   | ⏳ Upcoming  |
+| Day 14 | Pandas Data Analysis                   | ✅ Completed|
+| Day 15 | Pandas Data Cleaning                   | 🔜 Next     |
 | Day 16 | Pandas GroupBy & Aggregation           | ⏳ Upcoming  |
 | Day 17 | Data Visualization                     | ⏳ Upcoming  |
 | Day 18 | Matplotlib                             | ⏳ Upcoming  |
@@ -673,8 +673,287 @@ The same concepts can be applied to real-world datasets such as:
 * Business KPIs
 
 This is an important step toward using Python for **Data Analysis**.
+----
+
+# 📊 DA30 – Day 14: Introduction to Pandas & Student Data Analysis
+
+## 📅 Day 14
+
+### 🎯 Objective
+
+Learn the fundamentals of **Pandas** and use a Pandas DataFrame to perform basic data inspection, statistical analysis, column selection, and conditional filtering.
 
 ---
+
+## 🧰 Tools & Technologies
+
+* Python
+* Pandas
+* VS Code
+
+---
+
+## 📚 Concepts Covered
+
+* Pandas Library
+* Pandas DataFrame
+* Creating a DataFrame from a Python Dictionary
+* DataFrame Inspection
+* `head()`
+* `tail()`
+* `info()`
+* `describe()`
+* `shape`
+* Column Selection
+* Mean, Maximum and Minimum
+* Boolean Filtering
+* Multiple Conditions
+* Logical AND (`&`)
+
+---
+
+## 📋 Dataset
+
+A student performance dataset was created using the following information:
+
+```python
+data = {
+    "Name": ["Rahul", "Priya", "Arun", "Sneha", "Kiran", "Anjali", "Ravi", "Neha"],
+    "Age": [20, 21, 20, 22, 21, 20, 22, 21],
+    "Marks": [78, 92, 56, 88, 67, 95, 39, 73],
+    "Attendance": [85, 94, 72, 91, 78, 96, 65, 82]
+}
+```
+
+The dataset contains:
+
+* **8 students**
+* **4 columns**
+* Student Name
+* Age
+* Marks
+* Attendance
+
+---
+
+## 🔍 Analysis Performed
+
+### 1. Basic DataFrame Analysis
+
+Used Pandas functions to inspect the dataset:
+
+```python
+df.head()
+df.tail(3)
+df.info()
+df.describe()
+df.shape
+```
+
+### 2. Column Analysis
+
+Selected individual columns and calculated:
+
+* Average marks
+* Highest marks
+* Lowest marks
+
+Example:
+
+```python
+df["Marks"].mean()
+df["Marks"].max()
+df["Marks"].min()
+```
+
+### 3. Student Filtering
+
+Identified students who:
+
+* Scored **75 or above**
+* Had attendance **below 75%**
+* Passed the examination (`Marks >= 40`)
+* Failed the examination (`Marks < 40`)
+
+### 4. Mini Analyst Challenge
+
+Used multiple conditions to identify students who:
+
+* Scored **75 or above**
+* AND had attendance of **85% or above**
+
+```python
+df[(df["Marks"] >= 75) & (df["Attendance"] >= 85)]
+```
+
+---
+
+## 📈 Key Results
+
+| Metric                                | Result |
+| ------------------------------------- | -----: |
+| Number of Students                    |      8 |
+| Number of Columns                     |      4 |
+| Average Marks                         |   73.5 |
+| Highest Marks                         |     95 |
+| Lowest Marks                          |     39 |
+| Students Passed                       |      7 |
+| Students Failed                       |      1 |
+| Students with Attendance < 75%        |      2 |
+| Students Scoring 75+                  |      4 |
+| Students Scoring 75+ & Attendance 85+ |      4 |
+
+---
+
+## 🏆 Mini Analyst Challenge Result
+
+The following students scored **75 or above** and also had **attendance of 85% or above**:
+
+| Name   | Marks | Attendance |
+| ------ | ----: | ---------: |
+| Rahul  |    78 |         85 |
+| Priya  |    92 |         94 |
+| Sneha  |    88 |         91 |
+| Anjali |    95 |         96 |
+
+**Total: 4 students**
+
+---
+
+## 🧠 Key Learning
+
+Today I learned how Pandas can be used to work with structured, tabular data.
+
+Important techniques learned:
+
+### Creating a DataFrame
+
+```python
+df = pd.DataFrame(data)
+```
+
+### Selecting a Column
+
+```python
+df["Marks"]
+```
+
+### Filtering Data
+
+```python
+df[df["Marks"] >= 75]
+```
+
+### Multiple Conditions
+
+```python
+df[(df["Marks"] >= 75) & (df["Attendance"] >= 85)]
+```
+
+### Understanding Dataset Structure
+
+```python
+df.shape
+df.info()
+df.describe()
+```
+
+---
+
+## 💡 Data Analyst Perspective
+
+Pandas is one of the most important Python libraries for Data Analysis.
+
+Today's exercise introduced the workflow of:
+
+```text
+Raw Data
+   ↓
+DataFrame
+   ↓
+Inspect Data
+   ↓
+Select Columns
+   ↓
+Filter Data
+   ↓
+Calculate Statistics
+   ↓
+Extract Insights
+```
+
+These techniques can be applied to real-world datasets such as:
+
+* Student records
+* Sales data
+* Employee information
+* Customer datasets
+* Financial data
+* Business performance data
+
+---
+
+## 🔄 NumPy → Pandas Progress
+
+Day 13 focused on numerical analysis using **NumPy arrays**.
+
+Day 14 introduced **Pandas DataFrames**, allowing the analysis of structured data containing multiple columns.
+
+```text
+NumPy
+  ↓
+Numerical Arrays
+  ↓
+Pandas
+  ↓
+DataFrames
+  ↓
+Real-World Tabular Data
+```
+
+---
+
+## 📌 Important Note
+
+During the exercise, I learned the difference between **methods** and **attributes** in Pandas.
+
+Methods require parentheses:
+
+```python
+df.head()
+df.info()
+df.describe()
+```
+
+Attributes do not:
+
+```python
+df.shape
+```
+
+I also learned that selecting columns by their names is more readable and reliable:
+
+```python
+df["Marks"]
+```
+
+rather than relying on column positions such as:
+
+```python
+df[df.columns[2]]
+```
+
+---
+
+## ✅ Day 14 Status
+
+**Day 14 Completed Successfully! 🎯**
+
+### DA30 Progress
+
+**14 / 30 Days Completed**
+
+> Moving from basic Python and NumPy toward practical Data Analysis with Pandas. 🚀
 
 ---
 
@@ -696,6 +975,7 @@ DA30/
 ├── Day11/
 ├── Day12/
 ├── Day13/
+├── Day14/
 └── README.md
 ```
 
