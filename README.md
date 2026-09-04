@@ -41,8 +41,8 @@ Through this 30-day challenge, I aim to strengthen my skills in:
 | Day 10 | NumPy Random Module                    | ✅ Completed |
 | Day 11 | NumPy Aggregation & 2D Analysis        | ✅ Completed |
 | Day 12 | NumPy Reshape, Sorting & Ranking       | ✅ Completed |
-| Day 13 | NumPy Filtering & Conditional Analysis | 🔜 Next     |
-| Day 14 | Pandas Data Analysis                   | ⏳ Upcoming  |
+| Day 13 | NumPy Filtering & Conditional Analysis | ✅ Completed|
+| Day 14 | Pandas Data Analysis                   | 🔜 Next     |
 | Day 15 | Pandas Data Cleaning                   | ⏳ Upcoming  |
 | Day 16 | Pandas GroupBy & Aggregation           | ⏳ Upcoming  |
 | Day 17 | Data Visualization                     | ⏳ Upcoming  |
@@ -505,18 +505,176 @@ Day 12 strengthened the ability to **organize, sort, rank and summarize numerica
 
 ---
 
-# 🔜 Day 13 – Next Step
+# 📊 DA30 – Day 13: Student Marks Analysis Using NumPy
 
-## NumPy Filtering & Conditional Analysis
+## 📅 Day 13
 
-The next stage of the DA30 challenge will focus on:
+### 🎯 Objective
 
-* Advanced conditional filtering
-* Multiple conditions
-* Boolean masks
-* Filtering real-world datasets
-* Conditional analysis
-* Data-driven decision making
+Analyze student examination marks using **NumPy** and perform statistical, conditional, categorical, and percentage-based analysis.
+
+---
+
+## 🧰 Tools & Technologies
+
+* Python
+* NumPy
+* VS Code
+
+---
+
+## 📚 Concepts Covered
+
+* NumPy Arrays
+* `np.sum()`
+* `np.mean()`
+* `np.max()`
+* `np.min()`
+* Boolean Indexing
+* Conditional Filtering
+* `np.count_nonzero()`
+* Logical AND (`&`)
+* Logical OR (`|`)
+* Percentage Calculation
+* `np.sort()`
+* Top-N Analysis
+
+---
+
+## 💻 Dataset
+
+The analysis was performed on the following student marks:
+
+```python
+marks = np.array([
+    45, 78, 92, 56, 67,
+    34, 88, 73, 95, 41,
+    62, 85, 29, 76, 90
+])
+```
+
+---
+
+## 🔍 Analysis Performed
+
+### 1. Basic Statistics
+
+Calculated:
+
+* Total marks
+* Average marks
+* Highest marks
+* Lowest marks
+
+### 2. Pass / Fail Analysis
+
+* Students who scored **40 or above** were considered passed.
+* Students who scored **below 40** were considered failed.
+* Number of passed and failed students was calculated.
+
+### 3. Marks Categorization
+
+Students were categorized into:
+
+| Category  | Marks        |
+| --------- | ------------ |
+| Excellent | 90 and above |
+| Very Good | 75–89        |
+| Good      | 60–74        |
+| Average   | 40–59        |
+| Failed    | Below 40     |
+
+### 4. Conditional Analysis
+
+Identified:
+
+* Students scoring between **60 and 80**
+* Students scoring **below 40 OR above 90**
+
+### 5. Percentage Analysis
+
+Calculated:
+
+* Percentage of students who passed
+* Percentage of students who scored **75 or above**
+
+### 6. Top 5 Analysis
+
+Used NumPy sorting to identify the **Top 5 marks**.
+
+---
+
+## 📈 Key Results
+
+| Metric                 |             Result |
+| ---------------------- | -----------------: |
+| Total Marks            |               1011 |
+| Average Marks          |              67.40 |
+| Highest Marks          |                 95 |
+| Lowest Marks           |                 29 |
+| Students Passed        |                 13 |
+| Students Failed        |                  2 |
+| Pass Percentage        |             86.67% |
+| Students Scoring 75+   |                  7 |
+| Percentage Scoring 75+ |             46.67% |
+| Top 5 Marks            | 85, 88, 90, 92, 95 |
+
+---
+
+## 🧠 Key Learning
+
+Today I learned how NumPy can be used to perform practical data analysis on numerical datasets.
+
+Important techniques practiced:
+
+```python
+marks[marks >= 40]
+```
+
+Used Boolean indexing to filter passed students.
+
+```python
+marks[(marks >= 60) & (marks <= 80)]
+```
+
+Used multiple conditions with logical AND.
+
+```python
+marks[(marks < 40) | (marks > 90)]
+```
+
+Used logical OR for combined filtering.
+
+```python
+np.count_nonzero(marks >= 40)
+```
+
+Counted values satisfying a condition.
+
+```python
+np.sort(marks)[-5:]
+```
+
+Extracted the Top 5 marks after sorting.
+
+---
+
+## 💡 Data Analyst Perspective
+
+This exercise demonstrated how numerical data can be transformed into useful insights using Python.
+
+The same concepts can be applied to real-world datasets such as:
+
+* Student performance
+* Sales analysis
+* Employee performance
+* Customer data
+* Financial records
+* Business KPIs
+
+This is an important step toward using Python for **Data Analysis**.
+
+---
 
 ---
 
@@ -537,6 +695,7 @@ DA30/
 ├── Day10/
 ├── Day11/
 ├── Day12/
+├── Day13/
 └── README.md
 ```
 
