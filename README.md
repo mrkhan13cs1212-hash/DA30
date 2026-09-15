@@ -956,6 +956,299 @@ df[df.columns[2]]
 > Moving from basic Python and NumPy toward practical Data Analysis with Pandas. 🚀
 
 ---
+# 📊 DA30 – Day 15: Data Cleaning with Pandas
+
+## 📌 Overview
+
+Day 15 of the **DA30 – 30 Day Data Analyst Transformation Challenge** focused on **Data Cleaning using Pandas**.
+
+In this session, I worked with a student dataset containing missing values and duplicate records. The objective was to identify data-quality issues, clean the dataset, perform analysis on the cleaned data, and export the final dataset as a CSV file.
+
+---
+
+## 🎯 Objectives
+
+* Identify missing values using Pandas
+* Detect and remove duplicate records
+* Handle missing numerical values
+* Apply Boolean filtering
+* Combine multiple filtering conditions
+* Analyze the cleaned dataset
+* Export cleaned data to CSV
+
+---
+
+## 🛠️ Tools & Technologies
+
+* Python
+* Pandas
+* CSV
+* Git
+* GitHub
+
+---
+
+## 📂 Dataset
+
+The dataset contains information about students:
+
+| Column     | Description           |
+| ---------- | --------------------- |
+| Name       | Student name          |
+| Age        | Student age           |
+| Marks      | Student marks         |
+| Attendance | Attendance percentage |
+
+The original dataset contained **9 records**, including missing values and one duplicate record.
+
+---
+
+## 🧹 Data Cleaning
+
+### 1. Identifying Missing Values
+
+Used:
+
+```python
+df.isnull().sum()
+```
+
+Missing values were found in:
+
+* Age – 2 values
+* Marks – 1 value
+* Attendance – 1 value
+
+---
+
+### 2. Detecting Duplicate Records
+
+Used:
+
+```python
+df.duplicated().sum()
+```
+
+The dataset contained **1 duplicate record**.
+
+The duplicate was removed using:
+
+```python
+df = df.drop_duplicates()
+```
+
+The dataset was reduced from **9 records to 8 records**.
+
+---
+
+### 3. Handling Missing Values
+
+Missing numerical values were replaced using the respective column mean:
+
+```python
+df["Age"] = df["Age"].fillna(df["Age"].mean())
+df["Marks"] = df["Marks"].fillna(df["Marks"].mean())
+df["Attendance"] = df["Attendance"].fillna(df["Attendance"].mean())
+```
+
+The numerical values were then rounded to two decimal places:
+
+```python
+df["Age"] = df["Age"].round(2)
+df["Marks"] = df["Marks"].round(2)
+df["Attendance"] = df["Attendance"].round(2)
+```
+
+---
+
+## 🔎 Data Analysis Challenges
+
+### Challenge 1 — Students Who Scored 75 or Above
+
+```python
+df.loc[df["Marks"] >= 75]
+```
+
+**Result:** 3 students
+
+* Rahul – 78 marks
+* Priya – 92 marks
+* Anjali – 95 marks
+
+---
+
+### Challenge 2 — Students with Attendance Below 75
+
+```python
+df.loc[df["Attendance"] < 75]
+```
+
+**Result:** 2 students
+
+* Arun – 72 attendance
+* Ravi – 65 attendance
+
+---
+
+### Challenge 3 — High Performing Students
+
+A high-performing student was defined as having:
+
+* Marks ≥ 75
+* Attendance ≥ 85
+
+```python
+df.loc[
+    (df["Marks"] >= 75) &
+    (df["Attendance"] >= 85)
+]
+```
+
+**Result:** 3 high-performing students
+
+* Rahul
+* Priya
+* Anjali
+
+---
+
+### Challenge 4 — Count High Performers
+
+```python
+high_performers = df.loc[
+    (df["Marks"] >= 75) &
+    (df["Attendance"] >= 85)
+]
+
+print(len(high_performers))
+```
+
+**Number of High Performers:** 3
+
+---
+
+## 📈 Final Analysis
+
+| Metric                       | Result |
+| ---------------------------- | -----: |
+| Original Records             |      9 |
+| Cleaned Records              |      8 |
+| Duplicate Records Removed    |      1 |
+| Students Scoring ≥75         |      3 |
+| Students with Attendance <75 |      2 |
+| High Performers              |      3 |
+| Highest Marks                |     95 |
+| Lowest Marks                 |     39 |
+| Highest Attendance           |     96 |
+
+### 🏆 Top Student
+
+**Anjali**
+
+* Marks: 95
+* Attendance: 96
+* Age: 20
+
+---
+
+## 💾 Exporting Cleaned Data
+
+The final cleaned dataset was exported using:
+
+```python
+df.to_csv("cleaned_students.csv", index=False)
+```
+
+The cleaned CSV file can now be used for further analysis in:
+
+* Excel
+* Power BI
+* SQL workflows
+* Future Python/Pandas projects
+
+---
+
+## 🧠 Key Pandas Concepts Learned
+
+During Day 15, I practiced:
+
+```python
+df.info()
+df.isnull()
+df.isnull().sum()
+df.duplicated()
+df.drop_duplicates()
+df.fillna()
+df.loc[]
+df.to_csv()
+```
+
+I also learned how to combine multiple Boolean conditions using:
+
+```python
+&
+```
+
+with parentheses around each condition.
+
+---
+
+## 💡 Key Learning
+
+Day 15 demonstrated that **data cleaning is an essential part of the Data Analyst workflow**.
+
+Before performing analysis, raw data needs to be checked for:
+
+* Missing values
+* Duplicate records
+* Incorrect or inconsistent data
+
+Clean data produces more reliable analysis and better business decisions.
+
+---
+
+## 🚀 Skills Developed
+
+* Python
+* Pandas
+* Data Cleaning
+* Missing Value Handling
+* Duplicate Detection
+* Boolean Filtering
+* Data Analysis
+* CSV Export
+* Git & GitHub
+
+---
+
+## 📁 Project Files
+
+```text
+Day15/
+│
+├── Practikal.py
+├── cleaned_students.csv
+├── Day15_Pandas_Data_Cleaning.ipynb
+└── README.md
+```
+
+---
+
+## ✅ Day 15 Status
+
+**Completed ✔️**
+
+> Clean Data → Analyze Data → Extract Insights → Export Results
+
+---
+
+### 🔗 DA30 Progress
+
+**Day 15 / 30 — Completed**
+
+Continuing the journey toward becoming a **Data Analyst**.
+
+---
 
 # 📂 Repository Structure
 
@@ -976,6 +1269,7 @@ DA30/
 ├── Day12/
 ├── Day13/
 ├── Day14/
+├── Day15/
 └── README.md
 ```
 
