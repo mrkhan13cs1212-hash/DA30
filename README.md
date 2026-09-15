@@ -43,8 +43,8 @@ Through this 30-day challenge, I aim to strengthen my skills in:
 | Day 12 | NumPy Reshape, Sorting & Ranking       | ✅ Completed |
 | Day 13 | NumPy Filtering & Conditional Analysis | ✅ Completed|
 | Day 14 | Pandas Data Analysis                   | ✅ Completed|
-| Day 15 | Pandas Data Cleaning                   | 🔜 Next     |
-| Day 16 | Pandas GroupBy & Aggregation           | ⏳ Upcoming  |
+| Day 15 | Pandas Data Cleaning                   | ✅ Completed|
+| Day 16 | Pandas GroupBy & Aggregation           | 🔜 Next     |
 | Day 17 | Data Visualization                     | ⏳ Upcoming  |
 | Day 18 | Matplotlib                             | ⏳ Upcoming  |
 | Day 19 | Seaborn                                | ⏳ Upcoming  |
