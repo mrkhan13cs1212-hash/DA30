@@ -45,8 +45,8 @@ Through this 30-day challenge, I aim to strengthen my skills in:
 | Day 14 | Pandas Data Analysis                   | ✅ Completed |
 | Day 15 | Pandas Data Cleaning                   | ✅ Completed |
 | Day 16 | Pandas GroupBy & Aggregation           | ✅ Completed |
-| Day 17 | Data Visualization                     | 🔜 Next      |
-| Day 18 | Matplotlib                             | ⏳ Upcoming  |
+| Day 17 | Data Visualization                     | ✅ Completed |
+| Day 18 | Matplotlib                             | 🔜 Next      |
 | Day 19 | Seaborn                                | ⏳ Upcoming  |
 | Day 20 | SQL Basics                             | ⏳ Upcoming  |
 | Day 21 | SQL Filtering & Aggregation            | ⏳ Upcoming  |
@@ -1428,10 +1428,225 @@ Skills practiced:
 
 `Pandas` • `groupby()` • `agg()` • `mean()` • `max()` • `min()` • `sum()` • `count()` • `filtering` • `idxmax()` • `Data Analysis`
 ---
+# 📊 DA30 Day 17 – Pandas Sorting, Ranking & Top Performers
+
+## 📌 Overview
+
+Day 17 focused on sorting, ranking, filtering, and identifying top-performing students using Pandas.
+
+The exercises built upon the `groupby()` and aggregation concepts learned on Day 16 and introduced techniques commonly used in Data Analyst workflows for creating rankings, leaderboards, and Top-N reports.
+
+---
+
+## 🎯 Learning Objectives
+
+* Sort DataFrames using `sort_values()`
+* Sort data in ascending and descending order
+* Sort using multiple columns
+* Select Top-N and Bottom-N records
+* Use `nlargest()` and `nsmallest()`
+* Create rankings using `rank()`
+* Combine filtering and sorting
+* Identify the highest-performing record within each group
+* Create student performance reports
+
+---
+
+## 🛠️ Tools & Technologies
+
+* Python
+* Pandas
+* Jupyter Notebook
+* Git
+* GitHub
+
+---
+
+## 📂 Dataset
+
+The analysis was performed using a student dataset containing:
+
+* Student Name
+* Gender
+* Marks
+* Attendance
+
+---
+
+## 🧪 Challenges Completed
+
+### Challenge 1 – Sort by Marks
+
+Sorted students by Marks from lowest to highest using `sort_values()`.
+
+### Challenge 2 – Sort by Marks Descending
+
+Sorted students from highest Marks to lowest Marks.
+
+### Challenge 3 – Top 3 Students
+
+Identified the three students with the highest Marks.
+
+### Challenge 4 – Bottom 3 Students
+
+Identified the three students with the lowest Marks.
+
+### Challenge 5 – Top 5 Using `nlargest()`
+
+Used `nlargest()` to retrieve the five highest-scoring students.
+
+### Challenge 6 – Lowest 3 Using `nsmallest()`
+
+Used `nsmallest()` to identify the three students with the lowest Marks.
+
+### Challenge 7 – Sort by Attendance
+
+Sorted students according to Attendance from highest to lowest.
+
+### Challenge 8 – Sort Using Multiple Columns
+
+Sorted students by:
+
+1. Gender
+2. Marks in descending order within each gender
+
+### Challenge 9 – Create Student Rank
+
+Created a `Rank` column based on Marks, with the highest-scoring student receiving Rank 1.
+
+```python
+df["Rank"] = df["Marks"].rank(
+    ascending=False,
+    method="min"
+)
+```
+
+### Challenge 10 – Display Students by Rank
+
+Sorted the DataFrame according to the newly created Rank column.
+
+### Challenge 11 – Top Students with Good Attendance
+
+Filtered students satisfying:
+
+* Marks ≥ 80
+* Attendance ≥ 85
+
+Then sorted them by Marks in descending order.
+
+### Challenge 12 – Gender-wise Top Student
+
+Used `groupby()` and `idxmax()` to identify the highest-scoring student within each gender.
+
+### Challenge 13 – Top Performers
+
+Identified students satisfying:
+
+* Marks ≥ 75
+* Attendance ≥ 80
+
+The resulting records were sorted by Marks in descending order and displayed with their existing overall Rank.
+
+### Challenge 14 – Top Student by Gender
+
+Identified the highest-performing student from each gender.
+
+Result:
+
+* **Female:** Anjali – 95 Marks, 96 Attendance, Rank 1
+* **Male:** Aman – 81 Marks, 88 Attendance, Rank 5
+
+---
+
+## 🔑 Key Pandas Concepts
+
+### Sorting
+
+```python
+df.sort_values("Marks", ascending=False)
+```
+
+Sorts students from highest to lowest Marks.
+
+### Top-N Records
+
+```python
+df.nlargest(5, "Marks")
+```
+
+Returns the five highest Marks.
+
+### Bottom-N Records
+
+```python
+df.nsmallest(3, "Marks")
+```
+
+Returns the three lowest Marks.
+
+### Ranking
+
+```python
+df["Rank"] = df["Marks"].rank(
+    ascending=False,
+    method="min"
+)
+```
+
+Creates an overall ranking based on Marks.
+
+### Multi-column Sorting
+
+```python
+df.sort_values(
+    ["Gender", "Marks"],
+    ascending=[True, False]
+)
+```
+
+Sorts by Gender and then by Marks within each gender.
+
+### Group-wise Maximum
+
+```python
+df.loc[df.groupby("Gender")["Marks"].idxmax()]
+```
+
+Identifies the highest-scoring student in each gender group.
+
+---
+
+## 📈 Key Learning
+
+Day 17 demonstrated how Pandas can transform raw student data into useful analytical outputs such as:
+
+* Leaderboards
+* Top-N reports
+* Bottom-N reports
+* Ranked datasets
+* Filtered performance reports
+* Group-wise top performers
+
+These techniques are commonly useful when preparing reports and dashboards for business and academic analysis.
+
+---
+
+## 🧠 Data Analyst Skills Practiced
+
+`sort_values()` • `head()` • `tail()` • `nlargest()` • `nsmallest()` • `rank()` • `groupby()` • `idxmax()` • Boolean Filtering • Multi-column Sorting • Data Analysis
+
+---
+
+## ✅ Day 17 Status
+
+**Completed Successfully 🎯**
+
+**14 / 14 Challenges Completed**
+---
 
 ### 🔗 DA30 Progress
 
-**Day 16 / 30 — Completed**
+**Day 17 / 30 — Completed**
 
 Continuing the journey toward becoming a **Data Analyst**.
 
@@ -1458,6 +1673,7 @@ DA30/
 ├── Day14/
 ├── Day15/
 ├── Day16/
+├── Day17/
 └── README.md
 ```
 
