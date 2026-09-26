@@ -41,11 +41,11 @@ Through this 30-day challenge, I aim to strengthen my skills in:
 | Day 10 | NumPy Random Module                    | ✅ Completed |
 | Day 11 | NumPy Aggregation & 2D Analysis        | ✅ Completed |
 | Day 12 | NumPy Reshape, Sorting & Ranking       | ✅ Completed |
-| Day 13 | NumPy Filtering & Conditional Analysis | ✅ Completed|
-| Day 14 | Pandas Data Analysis                   | ✅ Completed|
-| Day 15 | Pandas Data Cleaning                   | ✅ Completed|
-| Day 16 | Pandas GroupBy & Aggregation           | 🔜 Next     |
-| Day 17 | Data Visualization                     | ⏳ Upcoming  |
+| Day 13 | NumPy Filtering & Conditional Analysis | ✅ Completed |
+| Day 14 | Pandas Data Analysis                   | ✅ Completed |
+| Day 15 | Pandas Data Cleaning                   | ✅ Completed |
+| Day 16 | Pandas GroupBy & Aggregation           | ✅ Completed |
+| Day 17 | Data Visualization                     | 🔜 Next      |
 | Day 18 | Matplotlib                             | ⏳ Upcoming  |
 | Day 19 | Seaborn                                | ⏳ Upcoming  |
 | Day 20 | SQL Basics                             | ⏳ Upcoming  |
@@ -1241,10 +1241,197 @@ Day15/
 > Clean Data → Analyze Data → Extract Insights → Export Results
 
 ---
+# 📊 DA30 Day 16 – Pandas GroupBy & Aggregation
+
+## 📌 Overview
+
+Day 16 focused on using **Pandas GroupBy and Aggregation** techniques for analyzing student data.
+
+The objective was to understand how to divide data into groups, calculate summary statistics, filter records based on conditions, and generate group-wise performance reports.
+
+---
+
+## 🎯 Learning Objectives
+
+* Understand the `groupby()` function
+* Calculate group-wise averages
+* Find maximum and minimum values
+* Calculate totals and counts
+* Use multiple aggregations with `agg()`
+* Combine filtering with `groupby()`
+* Use `idxmax()` to identify top-performing records
+* Create a summarized analytical DataFrame
+
+---
+
+## 🛠️ Tools & Technologies
+
+* Python
+* Pandas
+* Jupyter Notebook
+* Git
+* GitHub
+
+---
+
+## 📂 Dataset
+
+The analysis was performed using a student dataset containing information such as:
+
+* Student Name
+* Gender
+* Marks
+* Attendance
+
+---
+
+## 🧪 Challenges Completed
+
+### Challenge 1
+
+Calculated average attendance by gender.
+
+### Challenge 2
+
+Found maximum marks by gender.
+
+### Challenge 3
+
+Found minimum marks by gender.
+
+### Challenge 4
+
+Performed multiple aggregations using `agg()`.
+
+### Challenge 5
+
+Filtered students who scored 80 or above.
+
+### Challenge 6
+
+Calculated the average marks of students who scored 80 or above.
+
+**Result:** Average Marks = **89.0**
+
+### Challenge 7
+
+Counted the number of students in each gender group.
+
+**Result:**
+
+* Female: 5
+* Male: 5
+
+### Challenge 8
+
+Calculated average attendance by gender.
+
+### Challenge 9
+
+Calculated average marks by gender.
+
+### Challenge 10
+
+Calculated total marks by gender.
+
+### Challenge 11
+
+Created a gender-wise performance summary containing:
+
+* Average Marks
+* Maximum Marks
+* Minimum Marks
+* Average Attendance
+
+### Challenge 12
+
+Identified and counted high performers by gender.
+
+High Performer criteria:
+
+* Marks ≥ 80
+* Attendance ≥ 85
+
+### Challenge 13
+
+Created a Pass/Fail classification and analyzed the results by gender.
+
+Pass criteria:
+
+* Marks ≥ 40
+
+Fail criteria:
+
+* Marks < 40
+
+### Challenge 14
+
+Identified the highest-scoring student within each gender using `idxmax()`.
+
+### Challenge 15
+
+Created a complete gender-wise analytical summary containing:
+
+* Number of Students
+* Average Marks
+* Maximum Marks
+* Minimum Marks
+* Average Attendance
+* Maximum Attendance
+
+---
+
+## 🔑 Key Pandas Concepts
+
+```python
+df.groupby("Gender")
+```
+
+Used to divide the dataset into groups based on gender.
+
+```python
+df.groupby("Gender")["Marks"].mean()
+```
+
+Used to calculate average marks for each gender.
+
+```python
+df.groupby("Gender").agg({
+    "Marks": ["mean", "max", "min"],
+    "Attendance": ["mean", "max"]
+})
+```
+
+Used to perform multiple aggregations simultaneously.
+
+```python
+df.loc[df.groupby("Gender")["Marks"].idxmax()]
+```
+
+Used to identify the highest-scoring student within each gender.
+
+---
+
+## 📈 Key Learning
+
+Day 16 demonstrated how Pandas can be used to transform raw student-level data into meaningful summaries.
+
+The `groupby()` and `agg()` functions are particularly useful for **Data Analyst tasks**, where information often needs to be summarized by categories such as gender, department, region, product, or customer segment.
+
+---
+
+## ✅ Day 16 Status
+
+**Completed Successfully 🎯**
+
+Skills practiced:
+
+`Pandas` • `groupby()` • `agg()` • `mean()` • `max()` • `min()` • `sum()` • `count()` • `filtering` • `idxmax()` • `Data Analysis`
+---
 
 ### 🔗 DA30 Progress
 
-**Day 15 / 30 — Completed**
+**Day 16 / 30 — Completed**
 
 Continuing the journey toward becoming a **Data Analyst**.
 
@@ -1270,6 +1457,7 @@ DA30/
 ├── Day13/
 ├── Day14/
 ├── Day15/
+├── Day16/
 └── README.md
 ```
 
